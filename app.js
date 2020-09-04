@@ -47,7 +47,7 @@
         author: "Wayne Dyer"
         }, {
         quote: "Today is the tomorrow we worried about yesterday.",
-        author: ""
+        author: "Wayne Dyer"
         }, {
         quote: "It's easier to see the mistakes on someone else's paper.",
         author: ""
@@ -69,19 +69,18 @@
         }, {
         quote: "Ideas are the beginning points of all fortunes.",
         author: "Napoleon Hill"
-        } ]
+        } 
+    ];
 
+    const btn = document.getElementById('generate-btn')
+    const quote = document.getElementById('quote')
+    const author = document.querySelector('.author')
 
-
-
-
-
-
-
-
-
-
-
-
+    
+    btn.addEventListener('click', () => {
+        let random = Math.floor(Math.random() * quotes.length)
+        quote.textContent = quotes[random].quote
+        author.textContent = quotes[random].author
+    })
 
 })();
