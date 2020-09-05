@@ -1,4 +1,4 @@
-# Change background color
+# Quote generator
 
 > Click on the button and the you will get random quote each time
 
